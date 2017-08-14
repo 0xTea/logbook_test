@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3A2380C1F41DFD500873C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2380B1F41DFD500873C19 /* AppDelegate.swift */; };
+		A3A2380E1F41DFD600873C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2380D1F41DFD600873C19 /* ViewController.swift */; };
+		A3A238111F41DFD600873C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A2380F1F41DFD600873C19 /* Main.storyboard */; };
+		A3A238141F41DFD600873C19 /* LogBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3A238121F41DFD600873C19 /* LogBook.xcdatamodeld */; };
+		A3A238161F41DFD600873C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A238151F41DFD600873C19 /* Assets.xcassets */; };
+		A3A238191F41DFD600873C19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A238171F41DFD600873C19 /* LaunchScreen.storyboard */; };
+		A3A238241F41DFD600873C19 /* LogBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A238231F41DFD600873C19 /* LogBookTests.swift */; };
+		A3A2382F1F41DFD600873C19 /* LogBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2382E1F41DFD600873C19 /* LogBookUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3A238201F41DFD600873C19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A238001F41DFD500873C19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A238071F41DFD500873C19;
+			remoteInfo = LogBook;
+		};
+		A3A2382B1F41DFD600873C19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A238001F41DFD500873C19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A238071F41DFD500873C19;
+			remoteInfo = LogBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3A238081F41DFD500873C19 /* LogBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2380B1F41DFD500873C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3A2380D1F41DFD600873C19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3A238101F41DFD600873C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3A238131F41DFD600873C19 /* LogBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LogBook.xcdatamodel; sourceTree = "<group>"; };
+		A3A238151F41DFD600873C19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3A238181F41DFD600873C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3A2381A1F41DFD600873C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A2381F1F41DFD600873C19 /* LogBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A238231F41DFD600873C19 /* LogBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBookTests.swift; sourceTree = "<group>"; };
+		A3A238251F41DFD600873C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A2382A1F41DFD600873C19 /* LogBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2382E1F41DFD600873C19 /* LogBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBookUITests.swift; sourceTree = "<group>"; };
+		A3A238301F41DFD600873C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3A238051F41DFD500873C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2381C1F41DFD600873C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A238271F41DFD600873C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3A237FF1F41DFD500873C19 = {
+			isa = PBXGroup;
+			children = (
+				A3A2380A1F41DFD500873C19 /* LogBook */,
+				A3A238221F41DFD600873C19 /* LogBookTests */,
+				A3A2382D1F41DFD600873C19 /* LogBookUITests */,
+				A3A238091F41DFD500873C19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3A238091F41DFD500873C19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3A238081F41DFD500873C19 /* LogBook.app */,
+				A3A2381F1F41DFD600873C19 /* LogBookTests.xctest */,
+				A3A2382A1F41DFD600873C19 /* LogBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3A2380A1F41DFD500873C19 /* LogBook */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2380B1F41DFD500873C19 /* AppDelegate.swift */,
+				A3A2380D1F41DFD600873C19 /* ViewController.swift */,
+				A3A2380F1F41DFD600873C19 /* Main.storyboard */,
+				A3A238151F41DFD600873C19 /* Assets.xcassets */,
+				A3A238171F41DFD600873C19 /* LaunchScreen.storyboard */,
+				A3A2381A1F41DFD600873C19 /* Info.plist */,
+				A3A238121F41DFD600873C19 /* LogBook.xcdatamodeld */,
+			);
+			path = LogBook;
+			sourceTree = "<group>";
+		};
+		A3A238221F41DFD600873C19 /* LogBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3A238231F41DFD600873C19 /* LogBookTests.swift */,
+				A3A238251F41DFD600873C19 /* Info.plist */,
+			);
+			path = LogBookTests;
+			sourceTree = "<group>";
+		};
+		A3A2382D1F41DFD600873C19 /* LogBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2382E1F41DFD600873C19 /* LogBookUITests.swift */,
+				A3A238301F41DFD600873C19 /* Info.plist */,
+			);
+			path = LogBookUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3A238071F41DFD500873C19 /* LogBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A238331F41DFD600873C19 /* Build configuration list for PBXNativeTarget "LogBook" */;
+			buildPhases = (
+				A3A238041F41DFD500873C19 /* Sources */,
+				A3A238051F41DFD500873C19 /* Frameworks */,
+				A3A238061F41DFD500873C19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogBook;
+			productName = LogBook;
+			productReference = A3A238081F41DFD500873C19 /* LogBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3A2381E1F41DFD600873C19 /* LogBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A238361F41DFD600873C19 /* Build configuration list for PBXNativeTarget "LogBookTests" */;
+			buildPhases = (
+				A3A2381B1F41DFD600873C19 /* Sources */,
+				A3A2381C1F41DFD600873C19 /* Frameworks */,
+				A3A2381D1F41DFD600873C19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3A238211F41DFD600873C19 /* PBXTargetDependency */,
+			);
+			name = LogBookTests;
+			productName = LogBookTests;
+			productReference = A3A2381F1F41DFD600873C19 /* LogBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3A238291F41DFD600873C19 /* LogBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A238391F41DFD600873C19 /* Build configuration list for PBXNativeTarget "LogBookUITests" */;
+			buildPhases = (
+				A3A238261F41DFD600873C19 /* Sources */,
+				A3A238271F41DFD600873C19 /* Frameworks */,
+				A3A238281F41DFD600873C19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3A2382C1F41DFD600873C19 /* PBXTargetDependency */,
+			);
+			name = LogBookUITests;
+			productName = LogBookUITests;
+			productReference = A3A2382A1F41DFD600873C19 /* LogBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3A238001F41DFD500873C19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Tshepo;
+				TargetAttributes = {
+					A3A238071F41DFD500873C19 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 8J6J3HJ5T5;
+						ProvisioningStyle = Automatic;
+					};
+					A3A2381E1F41DFD600873C19 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 8J6J3HJ5T5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A3A238071F41DFD500873C19;
+					};
+					A3A238291F41DFD600873C19 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 8J6J3HJ5T5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A3A238071F41DFD500873C19;
+					};
+				};
+			};
+			buildConfigurationList = A3A238031F41DFD500873C19 /* Build configuration list for PBXProject "LogBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3A237FF1F41DFD500873C19;
+			productRefGroup = A3A238091F41DFD500873C19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3A238071F41DFD500873C19 /* LogBook */,
+				A3A2381E1F41DFD600873C19 /* LogBookTests */,
+				A3A238291F41DFD600873C19 /* LogBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3A238061F41DFD500873C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A238191F41DFD600873C19 /* LaunchScreen.storyboard in Resources */,
+				A3A238161F41DFD600873C19 /* Assets.xcassets in Resources */,
+				A3A238111F41DFD600873C19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2381D1F41DFD600873C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A238281F41DFD600873C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3A238041F41DFD500873C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A238141F41DFD600873C19 /* LogBook.xcdatamodeld in Sources */,
+				A3A2380E1F41DFD600873C19 /* ViewController.swift in Sources */,
+				A3A2380C1F41DFD500873C19 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2381B1F41DFD600873C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A238241F41DFD600873C19 /* LogBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A238261F41DFD600873C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A2382F1F41DFD600873C19 /* LogBookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3A238211F41DFD600873C19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A238071F41DFD500873C19 /* LogBook */;
+			targetProxy = A3A238201F41DFD600873C19 /* PBXContainerItemProxy */;
+		};
+		A3A2382C1F41DFD600873C19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A238071F41DFD500873C19 /* LogBook */;
+			targetProxy = A3A2382B1F41DFD600873C19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3A2380F1F41DFD600873C19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3A238101F41DFD600873C19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3A238171F41DFD600873C19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3A238181F41DFD600873C19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3A238311F41DFD600873C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3A238321F41DFD600873C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3A238341F41DFD600873C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8J6J3HJ5T5;
+				INFOPLIST_FILE = LogBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.za.applord.LogBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A3A238351F41DFD600873C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8J6J3HJ5T5;
+				INFOPLIST_FILE = LogBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.za.applord.LogBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A3A238371F41DFD600873C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8J6J3HJ5T5;
+				INFOPLIST_FILE = LogBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.za.applord.LogBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogBook.app/LogBook";
+			};
+			name = Debug;
+		};
+		A3A238381F41DFD600873C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8J6J3HJ5T5;
+				INFOPLIST_FILE = LogBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.za.applord.LogBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogBook.app/LogBook";
+			};
+			name = Release;
+		};
+		A3A2383A1F41DFD600873C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8J6J3HJ5T5;
+				INFOPLIST_FILE = LogBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.za.applord.LogBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LogBook;
+			};
+			name = Debug;
+		};
+		A3A2383B1F41DFD600873C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8J6J3HJ5T5;
+				INFOPLIST_FILE = LogBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.za.applord.LogBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LogBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3A238031F41DFD500873C19 /* Build configuration list for PBXProject "LogBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A238311F41DFD600873C19 /* Debug */,
+				A3A238321F41DFD600873C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A238331F41DFD600873C19 /* Build configuration list for PBXNativeTarget "LogBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A238341F41DFD600873C19 /* Debug */,
+				A3A238351F41DFD600873C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3A238361F41DFD600873C19 /* Build configuration list for PBXNativeTarget "LogBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A238371F41DFD600873C19 /* Debug */,
+				A3A238381F41DFD600873C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3A238391F41DFD600873C19 /* Build configuration list for PBXNativeTarget "LogBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A2383A1F41DFD600873C19 /* Debug */,
+				A3A2383B1F41DFD600873C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A3A238121F41DFD600873C19 /* LogBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A3A238131F41DFD600873C19 /* LogBook.xcdatamodel */,
+			);
+			currentVersion = A3A238131F41DFD600873C19 /* LogBook.xcdatamodel */;
+			path = LogBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A3A238001F41DFD500873C19 /* Project object */;
+}

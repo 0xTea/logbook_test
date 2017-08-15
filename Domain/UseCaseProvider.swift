@@ -7,3 +7,6 @@
 //
 
 import Foundation
+public protocol UseCaseProvider {
+    func getAllTrips()->AllTripsUseCase
+}

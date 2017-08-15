@@ -9,8 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+    let cdNavigationController = UINavigationController()
+    
+       override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -20,6 +21,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func btnSignup(_ sender: Any) {
+        let signupNavigator  = UserDetailsNavigator(storyBoard: self.storyboard!,navigationController: self.navigationController!)  // we can only do this as we know for certain  that we have a nvigation controller thats has been embedded  into the rootviewcontroller 
+        signupNavigator.toSignUp()
+    }
 
+    @IBAction func btnLogin(_ sender: Any) {
+        let loginNavigator  = UserDetailsNavigator(storyBoard: self.storyboard!,navigationController: self.navigationController!)
+        loginNavigator.toSignIn()
+    }
 }
 

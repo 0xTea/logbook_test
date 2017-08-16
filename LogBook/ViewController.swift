@@ -22,7 +22,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnSignup(_ sender: Any) {
-        let signupNavigator  = UserDetailsNavigator(storyBoard: self.storyboard!,navigationController: self.navigationController!)  // we can only do this as we know for certain  that we have a nvigation controller thats has been embedded  into the rootviewcontroller 
+        // we can only do this as we know for certain  that we have a nvigation controller thats has been embedded  into the rootviewcontroller
+        let signupNavigator  = UserDetailsNavigator(storyBoard: self.storyboard!,navigationController: self.navigationController!)
         signupNavigator.toSignUp()
     }
 

@@ -25,6 +25,7 @@
 		A3056F2E1F41EA8300A8EED4 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3056F2D1F41EA8300A8EED4 /* NetworkProvider.swift */; };
 		A3056F311F41EAE700A8EED4 /* TripsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3056F301F41EAE700A8EED4 /* TripsNetwork.swift */; };
 		A3056F361F41F11200A8EED4 /* UserDetailsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3056F351F41F11200A8EED4 /* UserDetailsNavigator.swift */; };
+		A369B8B01F444D2B00D7659F /* RxFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A369B8AF1F444D2B00D7659F /* RxFirebase.swift */; };
 		A3718C0A1F41F396002D1FA1 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3718C061F41F396002D1FA1 /* ActivityIndicator.swift */; };
 		A3718C0B1F41F396002D1FA1 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3718C071F41F396002D1FA1 /* ErrorTracker.swift */; };
 		A3718C0C1F41F396002D1FA1 /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3718C081F41F396002D1FA1 /* Observable+Ext.swift */; };
@@ -47,6 +48,7 @@
 		A3E50EF71F42D034007AC71D /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E50EF61F42D034007AC71D /* SignUpController.swift */; };
 		A3E50EF91F42D07A007AC71D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E50EF81F42D07A007AC71D /* LogInViewController.swift */; };
 		A3E50EFC1F42DA19007AC71D /* Trip+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E50EFB1F42DA19007AC71D /* Trip+Mapping.swift */; };
+		A3E50EFE1F42F623007AC71D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3E50EFD1F42F623007AC71D /* GoogleService-Info.plist */; };
 		FBA02BE5C2887C796644EBB0 /* Pods_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE75CDBE8788BE77B1C96B98 /* Pods_DomainTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -149,6 +151,7 @@
 		A3056F2D1F41EA8300A8EED4 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		A3056F301F41EAE700A8EED4 /* TripsNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsNetwork.swift; sourceTree = "<group>"; };
 		A3056F351F41F11200A8EED4 /* UserDetailsNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsNavigator.swift; sourceTree = "<group>"; };
+		A369B8AF1F444D2B00D7659F /* RxFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxFirebase.swift; sourceTree = "<group>"; };
 		A3718C061F41F396002D1FA1 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = Utility/ActivityIndicator.swift; sourceTree = "<group>"; };
 		A3718C071F41F396002D1FA1 /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorTracker.swift; path = Utility/ErrorTracker.swift; sourceTree = "<group>"; };
 		A3718C081F41F396002D1FA1 /* Observable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Observable+Ext.swift"; path = "Utility/Observable+Ext.swift"; sourceTree = "<group>"; };
@@ -178,6 +181,7 @@
 		A3E50EF61F42D034007AC71D /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		A3E50EF81F42D07A007AC71D /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		A3E50EFB1F42DA19007AC71D /* Trip+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+Mapping.swift"; sourceTree = "<group>"; };
+		A3E50EFD1F42F623007AC71D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B73E462F0D6029EEB340C5AC /* Pods-LogBookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogBookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LogBookUITests/Pods-LogBookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C37C991F8138BA637B8D4008 /* Pods-Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Network.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Network/Pods-Network.debug.xcconfig"; sourceTree = "<group>"; };
 		CDCC1DDE0C4855CCE7C6D8DB /* Pods_LogBookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogBookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -349,6 +353,7 @@
 		A3718C051F41F38C002D1FA1 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				A369B8AF1F444D2B00D7659F /* RxFirebase.swift */,
 				A3718C061F41F396002D1FA1 /* ActivityIndicator.swift */,
 				A3718C071F41F396002D1FA1 /* ErrorTracker.swift */,
 				A3718C081F41F396002D1FA1 /* Observable+Ext.swift */,
@@ -399,6 +404,7 @@
 				A3A238151F41DFD600873C19 /* Assets.xcassets */,
 				A3A238171F41DFD600873C19 /* LaunchScreen.storyboard */,
 				A3A2381A1F41DFD600873C19 /* Info.plist */,
+				A3E50EFD1F42F623007AC71D /* GoogleService-Info.plist */,
 				A3A238121F41DFD600873C19 /* LogBook.xcdatamodeld */,
 			);
 			path = LogBook;
@@ -742,6 +748,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A238191F41DFD600873C19 /* LaunchScreen.storyboard in Resources */,
+				A3E50EFE1F42F623007AC71D /* GoogleService-Info.plist in Resources */,
 				A3A238161F41DFD600873C19 /* Assets.xcassets in Resources */,
 				A3A238111F41DFD600873C19 /* Main.storyboard in Resources */,
 			);
@@ -1047,6 +1054,7 @@
 			files = (
 				A3718C0F1F41F421002D1FA1 /* Application.swift in Sources */,
 				A3A238141F41DFD600873C19 /* LogBook.xcdatamodeld in Sources */,
+				A369B8B01F444D2B00D7659F /* RxFirebase.swift in Sources */,
 				A3E50EF91F42D07A007AC71D /* LogInViewController.swift in Sources */,
 				A3718C0B1F41F396002D1FA1 /* ErrorTracker.swift in Sources */,
 				A3718C0A1F41F396002D1FA1 /* ActivityIndicator.swift in Sources */,

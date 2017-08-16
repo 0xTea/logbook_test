@@ -8,14 +8,32 @@
 
 import UIKit
 import CoreData
+import RxSwift
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    private let disposeBag = DisposeBag()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+
+        Firebase
+            .instance
+            .rx_user.subscribe(onNext: { (user) in
+                
+                print("yay")
+            }, onError: { (error) in
+               print("boob")
+            }, onCompleted: {
+                 print("yay")
+            }){
+              
+        }
+        
         // Override point for customization after application launch.
         return true
     }

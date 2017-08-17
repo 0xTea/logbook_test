@@ -25,12 +25,14 @@
 		A3056F2E1F41EA8300A8EED4 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3056F2D1F41EA8300A8EED4 /* NetworkProvider.swift */; };
 		A3056F311F41EAE700A8EED4 /* TripsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3056F301F41EAE700A8EED4 /* TripsNetwork.swift */; };
 		A3056F361F41F11200A8EED4 /* UserDetailsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3056F351F41F11200A8EED4 /* UserDetailsNavigator.swift */; };
-		A369B8B01F444D2B00D7659F /* RxFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A369B8AF1F444D2B00D7659F /* RxFirebase.swift */; };
 		A3718C0A1F41F396002D1FA1 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3718C061F41F396002D1FA1 /* ActivityIndicator.swift */; };
 		A3718C0B1F41F396002D1FA1 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3718C071F41F396002D1FA1 /* ErrorTracker.swift */; };
 		A3718C0C1F41F396002D1FA1 /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3718C081F41F396002D1FA1 /* Observable+Ext.swift */; };
 		A3718C0D1F41F396002D1FA1 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3718C091F41F396002D1FA1 /* Reusable.swift */; };
 		A3718C0F1F41F421002D1FA1 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3718C0E1F41F421002D1FA1 /* Application.swift */; };
+		A39E00FB1F45B26200FC9AE8 /* RxFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E00FA1F45B26200FC9AE8 /* RxFirebase.swift */; };
+		A39E00FD1F45BB7800FC9AE8 /* MainInterfaceNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E00FC1F45BB7800FC9AE8 /* MainInterfaceNavigator.swift */; };
+		A39E00FF1F45CC8700FC9AE8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E00FE1F45CC8700FC9AE8 /* MapViewController.swift */; };
 		A3A2380C1F41DFD500873C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2380B1F41DFD500873C19 /* AppDelegate.swift */; };
 		A3A2380E1F41DFD600873C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2380D1F41DFD600873C19 /* ViewController.swift */; };
 		A3A238111F41DFD600873C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A2380F1F41DFD600873C19 /* Main.storyboard */; };
@@ -151,12 +153,14 @@
 		A3056F2D1F41EA8300A8EED4 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		A3056F301F41EAE700A8EED4 /* TripsNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsNetwork.swift; sourceTree = "<group>"; };
 		A3056F351F41F11200A8EED4 /* UserDetailsNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsNavigator.swift; sourceTree = "<group>"; };
-		A369B8AF1F444D2B00D7659F /* RxFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxFirebase.swift; sourceTree = "<group>"; };
 		A3718C061F41F396002D1FA1 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = Utility/ActivityIndicator.swift; sourceTree = "<group>"; };
 		A3718C071F41F396002D1FA1 /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorTracker.swift; path = Utility/ErrorTracker.swift; sourceTree = "<group>"; };
 		A3718C081F41F396002D1FA1 /* Observable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Observable+Ext.swift"; path = "Utility/Observable+Ext.swift"; sourceTree = "<group>"; };
 		A3718C091F41F396002D1FA1 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = Utility/Reusable.swift; sourceTree = "<group>"; };
 		A3718C0E1F41F421002D1FA1 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		A39E00FA1F45B26200FC9AE8 /* RxFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxFirebase.swift; sourceTree = "<group>"; };
+		A39E00FC1F45BB7800FC9AE8 /* MainInterfaceNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInterfaceNavigator.swift; sourceTree = "<group>"; };
+		A39E00FE1F45CC8700FC9AE8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A3A238081F41DFD500873C19 /* LogBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A2380B1F41DFD500873C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3A2380D1F41DFD600873C19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -335,6 +339,7 @@
 		A3056F331F41F05700A8EED4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A39E00F91F459DB800FC9AE8 /* Trip */,
 				A3056F341F41F0BB00A8EED4 /* UserDetails */,
 			);
 			name = Scenes;
@@ -353,13 +358,22 @@
 		A3718C051F41F38C002D1FA1 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				A369B8AF1F444D2B00D7659F /* RxFirebase.swift */,
+				A39E00FA1F45B26200FC9AE8 /* RxFirebase.swift */,
 				A3718C061F41F396002D1FA1 /* ActivityIndicator.swift */,
 				A3718C071F41F396002D1FA1 /* ErrorTracker.swift */,
 				A3718C081F41F396002D1FA1 /* Observable+Ext.swift */,
 				A3718C091F41F396002D1FA1 /* Reusable.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		A39E00F91F459DB800FC9AE8 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				A39E00FC1F45BB7800FC9AE8 /* MainInterfaceNavigator.swift */,
+				A39E00FE1F45CC8700FC9AE8 /* MapViewController.swift */,
+			);
+			name = Trip;
 			sourceTree = "<group>";
 		};
 		A3A237FF1F41DFD500873C19 = {
@@ -1054,16 +1068,18 @@
 			files = (
 				A3718C0F1F41F421002D1FA1 /* Application.swift in Sources */,
 				A3A238141F41DFD600873C19 /* LogBook.xcdatamodeld in Sources */,
-				A369B8B01F444D2B00D7659F /* RxFirebase.swift in Sources */,
+				A39E00FB1F45B26200FC9AE8 /* RxFirebase.swift in Sources */,
 				A3E50EF91F42D07A007AC71D /* LogInViewController.swift in Sources */,
 				A3718C0B1F41F396002D1FA1 /* ErrorTracker.swift in Sources */,
 				A3718C0A1F41F396002D1FA1 /* ActivityIndicator.swift in Sources */,
 				A3056F361F41F11200A8EED4 /* UserDetailsNavigator.swift in Sources */,
 				A3E50EF71F42D034007AC71D /* SignUpController.swift in Sources */,
+				A39E00FD1F45BB7800FC9AE8 /* MainInterfaceNavigator.swift in Sources */,
 				A3718C0D1F41F396002D1FA1 /* Reusable.swift in Sources */,
 				A3A2380E1F41DFD600873C19 /* ViewController.swift in Sources */,
 				A3718C0C1F41F396002D1FA1 /* Observable+Ext.swift in Sources */,
 				A3A2380C1F41DFD500873C19 /* AppDelegate.swift in Sources */,
+				A39E00FF1F45CC8700FC9AE8 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

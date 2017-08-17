@@ -29,5 +29,14 @@ final class Application {
 
     }
     
+    func  configureMainInterface(in window :UIWindow) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(ofType: ViewController.self)
+        
+        window.rootViewController = vc
+    }
+    
+    
 }
 

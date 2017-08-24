@@ -25,6 +25,7 @@
 		A3056F2E1F41EA8300A8EED4 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3056F2D1F41EA8300A8EED4 /* NetworkProvider.swift */; };
 		A3056F311F41EAE700A8EED4 /* TripsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3056F301F41EAE700A8EED4 /* TripsNetwork.swift */; };
 		A3056F361F41F11200A8EED4 /* UserDetailsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3056F351F41F11200A8EED4 /* UserDetailsNavigator.swift */; };
+		A358DCFA1F4D86CC009E320B /* PersonIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358DCF91F4D86CC009E320B /* PersonIcon.swift */; };
 		A3718C0A1F41F396002D1FA1 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3718C061F41F396002D1FA1 /* ActivityIndicator.swift */; };
 		A3718C0B1F41F396002D1FA1 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3718C071F41F396002D1FA1 /* ErrorTracker.swift */; };
 		A3718C0C1F41F396002D1FA1 /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3718C081F41F396002D1FA1 /* Observable+Ext.swift */; };
@@ -153,6 +154,7 @@
 		A3056F2D1F41EA8300A8EED4 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		A3056F301F41EAE700A8EED4 /* TripsNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsNetwork.swift; sourceTree = "<group>"; };
 		A3056F351F41F11200A8EED4 /* UserDetailsNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsNavigator.swift; sourceTree = "<group>"; };
+		A358DCF91F4D86CC009E320B /* PersonIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonIcon.swift; sourceTree = "<group>"; };
 		A3718C061F41F396002D1FA1 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = Utility/ActivityIndicator.swift; sourceTree = "<group>"; };
 		A3718C071F41F396002D1FA1 /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorTracker.swift; path = Utility/ErrorTracker.swift; sourceTree = "<group>"; };
 		A3718C081F41F396002D1FA1 /* Observable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Observable+Ext.swift"; path = "Utility/Observable+Ext.swift"; sourceTree = "<group>"; };
@@ -372,6 +374,7 @@
 			children = (
 				A39E00FC1F45BB7800FC9AE8 /* MainInterfaceNavigator.swift */,
 				A39E00FE1F45CC8700FC9AE8 /* MapViewController.swift */,
+				A358DCF91F4D86CC009E320B /* PersonIcon.swift */,
 			);
 			name = Trip;
 			sourceTree = "<group>";
@@ -1074,6 +1077,7 @@
 				A3718C0A1F41F396002D1FA1 /* ActivityIndicator.swift in Sources */,
 				A3056F361F41F11200A8EED4 /* UserDetailsNavigator.swift in Sources */,
 				A3E50EF71F42D034007AC71D /* SignUpController.swift in Sources */,
+				A358DCFA1F4D86CC009E320B /* PersonIcon.swift in Sources */,
 				A39E00FD1F45BB7800FC9AE8 /* MainInterfaceNavigator.swift in Sources */,
 				A3718C0D1F41F396002D1FA1 /* Reusable.swift in Sources */,
 				A3A2380E1F41DFD600873C19 /* ViewController.swift in Sources */,

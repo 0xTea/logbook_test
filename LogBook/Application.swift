@@ -22,19 +22,19 @@ final class Application {
     func configureUserAccountInterface(in window : UIWindow)
     {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-
-        let vc = storyboard.instantiateViewController(ofType: ViewController.self)
-        
-        window.rootViewController = vc
+        let cdNavigationController = UINavigationController()
+        window.rootViewController = cdNavigationController
+        let mapnavigator  = UserDetailsNavigator(storyBoard: storyboard,navigationController: cdNavigationController)
+        mapnavigator.toMain()
 
     }
     
     func  configureMainInterface(in window :UIWindow) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let vc = storyboard.instantiateViewController(ofType: ViewController.self)
-        
-        window.rootViewController = vc
+        let cdNavigationController = UINavigationController()
+        window.rootViewController = cdNavigationController
+        let mapnavigator  = MainInterFaceNavigator(storyBoard: storyboard,navigationController: cdNavigationController)
+        mapnavigator.toMap()
     }
     
     

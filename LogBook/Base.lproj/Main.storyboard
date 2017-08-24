@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LogBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="LogBook" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -56,18 +56,15 @@
         <!--Navigation Controller-->
         <scene sceneID="14z-CU-vr8">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyw-jY-eET" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="2LF-ew-mTg" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tKA-jq-h0Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zDo-2w-lqN"/>
-                    </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jyw-jY-eET" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-674" y="28"/>
+            <point key="canvasLocation" x="-1159" y="94"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="0ah-ZI-SMK">
@@ -108,7 +105,7 @@
                     </view>
                     <connections>
                         <outlet property="txtemail" destination="4zt-Oj-Dll" id="QPM-Kh-IPU"/>
-                        <outlet property="txtpassword" destination="mMP-81-qaW" id="6wg-lf-CqT"/>
+                        <outlet property="txtpassword" destination="mMP-81-qaW" id="PSG-aL-DrI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dd7-7t-fAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -134,6 +131,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mapview" destination="Ebp-uz-KCM" id="UkT-6d-mYn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yay-zr-Awi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

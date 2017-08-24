@@ -79,6 +79,7 @@ class Firebase {
     var user: User? {
         return Auth.auth().currentUser
     }
+    let rx_user = ReplaySubject<User>.create(bufferSize: 1)
     
     /// signOut of Firebase, errors published in `rx_error`
     func signOut() {

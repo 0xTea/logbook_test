@@ -18,21 +18,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private let disposeBag = DisposeBag()
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
+        [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-         _ = Firebase.instance.rx_currentUser().subscribe(
-            onNext: { (user) in
-                
-            print(user.email ?? "hellooooodxc")
-                
-        }, onError: { (error) in
+        var disopob = false
+         _ = Firebase.instance.rx_authStateDidChange().subscribe(
+            onNext: { (auth,user) in
+            if user != nil {
+                // logged in
+               Application.shared.configureMainInterface(in: self.window!)
+            } else {
+                // logged out
+                Application.shared.configureUserAccountInterface(in: self.window!)
+            }
+         }, onError: { (error) in
             print(error.localizedDescription)
-        }, onCompleted: {
+         }, onCompleted: { 
             
-        }) {
+         }, onDisposed: {
             
-        }
-        
+         })
         // Override point for customization after application launch.
         return true
     }

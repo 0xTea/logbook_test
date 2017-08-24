@@ -36,4 +36,9 @@ final class  UserDetailsNavigator : DetailsNavigator{
         let vc = storyBoard.instantiateViewController(ofType: SignUpController.self)
         navigationController.pushViewController(vc, animated: true)
     }
+    func toMain()
+    {
+        let vc = storyBoard.instantiateViewController(ofType: ViewController.self)
+        navigationController.pushViewController(vc, animated: true)
+    }
 }

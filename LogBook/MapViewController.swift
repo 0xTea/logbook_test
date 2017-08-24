@@ -11,14 +11,13 @@ import MapKit
 
 class MapViewController: UIViewController , CLLocationManagerDelegate,MKMapViewDelegate{
     
-let initialLocation = CLLocation(latitude: -26.195246, longitude: 28.034088)
-     var userlocation = CLLocation()
+    var userlocation = CLLocation()
     
-       var second  = PersonIcon()
-        var locationManager = CLLocationManager()
+    var second  = PersonIcon()
+    var locationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
-                mapview?.delegate = self
+        mapview?.delegate = self
         mapview?.userTrackingMode = .follow
         mapview?.showsUserLocation = true
         
@@ -69,11 +68,11 @@ let initialLocation = CLLocation(latitude: -26.195246, longitude: 28.034088)
     
     func drawpin(latitude:Double?,longitude:Double?){
         
-         let second = PersonIcon(title: "My Next Location",
-                             locationName: "Far",
-                             discipline: "Sculpture",
-                             coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!))
-    mapview?.addAnnotation(second)
+        let second = PersonIcon(title: "My Next Location",
+                                locationName: "Far",
+                                discipline: "Sculpture",
+                                coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!))
+        mapview?.addAnnotation(second)
         
         print(distanceA_B(location_2:second))
         
@@ -81,22 +80,11 @@ let initialLocation = CLLocation(latitude: -26.195246, longitude: 28.034088)
     
     func distanceA_B( location_2:PersonIcon)->Double{
         
-        let noLocation = CLLocationCoordinate2D()
-        let pointALocation = CLLocation(latitude: noLocation.latitude, longitude: noLocation.longitude)
-        let pointBCoordinate = location_2.coordinate
-        
-        let pointBLocation = CLLocation(latitude: pointBCoordinate.latitude, longitude: pointBCoordinate.longitude)
-        let distanceMeters = pointALocation.distance(from: pointBLocation)
-        
-        
-        
         let destinationCoordinates = CLLocationCoordinate2DMake(location_2.coordinate.latitude, location_2.coordinate.longitude)
         let destinationPlacemark = MKPlacemark(coordinate: destinationCoordinates, addressDictionary: nil)
         let destinationMapItem = MKMapItem.init(placemark: destinationPlacemark)
         // Create request
         let request = MKDirectionsRequest ()
-        let user = CLLocationCoordinate2DMake(userlocation.coordinate.latitude, userlocation.coordinate.longitude)
-        
         //let sourcePlacemark = MKPlacemark(coordinate: user, addressDictionary: nil)
         let sourceMapItem = MKMapItem.forCurrentLocation()
         
@@ -110,7 +98,9 @@ let initialLocation = CLLocation(latitude: -26.195246, longitude: 28.034088)
             response, error in
             if let route = response?.routes.first {
                 
-                print("Distance: \(route.distance/1000), ETA: \(route.expectedTravelTime)")
+                print("Distance: \(route.distance/1000)km, ETA: \(route.expectedTravelTime/60) mins")
+                self.plotPolyline(route: route)
+                
             } else {
                 let alert = UIAlertController(title: nil,
                                               message: "Directions not available.", preferredStyle: .alert)
@@ -120,12 +110,14 @@ let initialLocation = CLLocation(latitude: -26.195246, longitude: 28.034088)
                 }
                 alert.addAction(okButton)
                 self.present(alert, animated: true,
-                                           completion: nil)
+                             completion: nil)
             }
         }
         
         return 0
     }
+    
+    
     @IBOutlet weak var mapview :MKMapView?
     let regionRadius: CLLocationDistance = 1000
     func centerMapOnLocation(location: CLLocation) {
@@ -173,7 +165,7 @@ let initialLocation = CLLocation(latitude: -26.195246, longitude: 28.034088)
             response, error in
             if let route = response?.routes.first {
                 
-                print("Distance: \(route.distance), ETA: \(route.expectedTravelTime)")
+                print("Distance: \(route.distance)km , ETA: \(route.expectedTravelTime/60) mins")
             } else {
                 print(error?.localizedDescription)
             }
@@ -182,15 +174,49 @@ let initialLocation = CLLocation(latitude: -26.195246, longitude: 28.034088)
         
     }
     
+    func plotPolyline(route: MKRoute) {
+        
+        mapview?.add(route.polyline)
+        print(route.polyline)
+        // 2
+        if  mapview?.overlays.count == 1 {
+            mapview?.setVisibleMapRect(route.polyline.boundingMapRect,
+                                       edgePadding: UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0),
+                                       animated: false)
+        }// 3
+        else {
+            let polylineBoundingRect =  MKMapRectUnion( (mapview?.visibleMapRect)!,
+                                                        route.polyline.boundingMapRect)
+            mapview?.setVisibleMapRect(polylineBoundingRect,
+                                       edgePadding: UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0),
+                                       animated: false)
+        }
+    }
     
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let polylineRenderer = MKPolylineRenderer(overlay: overlay)
+        if (overlay is MKPolyline) {
+            if mapView.overlays.count == 1 {
+                polylineRenderer.strokeColor =
+                    UIColor.blue.withAlphaComponent(0.75)
+            } else if mapView.overlays.count == 2 {
+                polylineRenderer.strokeColor =
+                    UIColor.green.withAlphaComponent(0.75)
+            } else if mapView.overlays.count == 3 {
+                polylineRenderer.strokeColor =
+                    UIColor.red.withAlphaComponent(0.75)
+            }
+            polylineRenderer.lineWidth = 5
+        }
+        return polylineRenderer
+    }
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
 }
-
 

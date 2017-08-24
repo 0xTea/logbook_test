@@ -15,7 +15,7 @@ extension UITableViewCell: Reusable {}
 extension UIViewController: Reusable {}
 
 extension UITableView {
-    func dequeueReusableCell<T: Reusable>(ofType cellType: T.Type = T.self, at indexPath: IndexPath) -> T where T: UITableViewCell {
+    func dequeueReusableCell<T:Any>(ofType cellType: T.Type = T.self, at indexPath: IndexPath) -> T where T: UITableViewCell {
         guard let cell = dequeueReusableCell(withIdentifier: cellType.reuseID,
                                              for: indexPath) as? T else {
             fatalError()
@@ -25,7 +25,7 @@ extension UITableView {
 }
 
 extension UIStoryboard {
-    func instantiateViewController<T: Reusable>(ofType type: T.Type = T.self) -> T where T: UIViewController {
+    func instantiateViewController<T: Any>(ofType type: T.Type = T.self) -> T where T: UIViewController {
         guard let viewController = instantiateViewController(withIdentifier: type.reuseID) as? T else {
             fatalError()
         }

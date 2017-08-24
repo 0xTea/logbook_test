@@ -48,6 +48,7 @@
 		A3A238561F41E13E00873C19 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A238411F41E13E00873C19 /* Domain.framework */; };
 		A3A238571F41E13E00873C19 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3A238411F41E13E00873C19 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A3A238611F41E22A00873C19 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A238601F41E22A00873C19 /* Trip.swift */; };
+		A3B9F5E11F4EB8C7009392FE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B9F5E01F4EB8C7009392FE /* MapKit.framework */; };
 		A3E50EF71F42D034007AC71D /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E50EF61F42D034007AC71D /* SignUpController.swift */; };
 		A3E50EF91F42D07A007AC71D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E50EF81F42D07A007AC71D /* LogInViewController.swift */; };
 		A3E50EFC1F42DA19007AC71D /* Trip+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E50EFB1F42DA19007AC71D /* Trip+Mapping.swift */; };
@@ -184,6 +185,7 @@
 		A3A238501F41E13E00873C19 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
 		A3A238521F41E13E00873C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3A238601F41E22A00873C19 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		A3B9F5E01F4EB8C7009392FE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A3E50EF61F42D034007AC71D /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		A3E50EF81F42D07A007AC71D /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		A3E50EFB1F42DA19007AC71D /* Trip+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+Mapping.swift"; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 			files = (
 				A3A238561F41E13E00873C19 /* Domain.framework in Frameworks */,
 				876E42F29948074016B56CE9 /* Pods_LogBook.framework in Frameworks */,
+				A3B9F5E11F4EB8C7009392FE /* MapKit.framework in Frameworks */,
 				A3056F1E1F41E83C00A8EED4 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +267,7 @@
 		31F65EA8B9C4A2CB7A993092 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3B9F5E01F4EB8C7009392FE /* MapKit.framework */,
 				1FE3238176331497C6DE11D3 /* Pods_Domain.framework */,
 				EE75CDBE8788BE77B1C96B98 /* Pods_DomainTests.framework */,
 				6BAC87F5E8F5387E227A8A81 /* Pods_LogBook.framework */,
@@ -694,6 +698,11 @@
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 8J6J3HJ5T5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A3A2381E1F41DFD600873C19 = {
 						CreatedOnToolsVersion = 8.3.1;

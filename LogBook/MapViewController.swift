@@ -113,13 +113,13 @@ let initialLocation = CLLocation(latitude: -26.195246, longitude: 28.034088)
                 print("Distance: \(route.distance/1000), ETA: \(route.expectedTravelTime)")
             } else {
                 let alert = UIAlertController(title: nil,
-                                              message: "Directions not available.", preferredStyle: .Alert)
+                                              message: "Directions not available.", preferredStyle: .alert)
                 let okButton = UIAlertAction(title: "OK",
-                                             style: .Cancel) { (alert) -> Void in
-                                                self.navigationController?.popViewControllerAnimated(true)
+                                             style: .cancel) { (alert) -> Void in
+                                                self.navigationController?.popViewController(animated: true)
                 }
                 alert.addAction(okButton)
-                self.presentViewController(alert, animated: true,
+                self.present(alert, animated: true,
                                            completion: nil)
             }
         }

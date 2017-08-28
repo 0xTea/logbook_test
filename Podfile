@@ -56,7 +56,7 @@ target 'LogBook' do
   use_frameworks!
   rx_cocoa
   firebase
-  
+  pod 'SideMenu'
   pod 'Bolts-Swift'
   # Pods for LogBook
 

@@ -6,7 +6,6 @@
 //  Copyright © 2017 Tshepo. All rights reserved.
 //
 
-import Alamofire
 import Domain
 import RxAlamofire
 import RxSwift

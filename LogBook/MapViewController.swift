@@ -12,16 +12,21 @@ import MapKit
 class MapViewController: UIViewController , CLLocationManagerDelegate,MKMapViewDelegate{
     
     var userlocation = CLLocation()
-    
+    let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
     var second  = PersonIcon()
     var locationManager = CLLocationManager()
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        self.navigationController?.navigationBar.backgroundColor = UIColor.clear
         mapview?.delegate = self
         mapview?.userTrackingMode = .follow
         mapview?.showsUserLocation = true
-        
-        
+        self.navigationController!.navigationBar.isHidden = true
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = UIColor.clear
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.delegate = self
         
@@ -85,7 +90,6 @@ class MapViewController: UIViewController , CLLocationManagerDelegate,MKMapViewD
         let destinationMapItem = MKMapItem.init(placemark: destinationPlacemark)
         // Create request
         let request = MKDirectionsRequest ()
-        //let sourcePlacemark = MKPlacemark(coordinate: user, addressDictionary: nil)
         let sourceMapItem = MKMapItem.forCurrentLocation()
         
         request.source = sourceMapItem
@@ -93,15 +97,15 @@ class MapViewController: UIViewController , CLLocationManagerDelegate,MKMapViewD
         request.transportType = MKDirectionsTransportType.automobile
         request.requestsAlternateRoutes = false
         let directions = MKDirections(request: request)
-        
+        self.activityIndicator.startAnimating()
         directions.calculate {
             response, error in
             if let route = response?.routes.first {
                 
                 print("Distance: \(route.distance/1000)km, ETA: \(route.expectedTravelTime/60) mins")
                 self.plotPolyline(route: route)
-                
-            } else {
+                self.activityIndicator.stopAnimating()
+                } else {
                 let alert = UIAlertController(title: nil,
                                               message: "Directions not available.", preferredStyle: .alert)
                 let okButton = UIAlertAction(title: "OK",
@@ -113,12 +117,12 @@ class MapViewController: UIViewController , CLLocationManagerDelegate,MKMapViewD
                              completion: nil)
             }
         }
-        
         return 0
     }
     
     
     @IBOutlet weak var mapview :MKMapView?
+    
     let regionRadius: CLLocationDistance = 1000
     func centerMapOnLocation(location: CLLocation) {
         
@@ -138,44 +142,9 @@ class MapViewController: UIViewController , CLLocationManagerDelegate,MKMapViewD
         self.userlocation = location
         
         
-        // Get destination position
-        
-        let pointBLocation = CLLocation(latitude: second.coordinate.latitude, longitude: second.coordinate.longitude)
-        let distanceMeters = pointBLocation.distance(from: pointBLocation)
-        
-        
-        
-        let destinationCoordinates = CLLocationCoordinate2DMake(second.coordinate.latitude, second.coordinate.longitude)
-        let destinationPlacemark = MKPlacemark(coordinate: destinationCoordinates, addressDictionary: nil)
-        let destinationMapItem = MKMapItem(placemark: destinationPlacemark)
-        
-        // Create request
-        let request = MKDirectionsRequest()
-        
-        let sourcePlacemark = MKPlacemark(coordinate: location.coordinate, addressDictionary: nil)
-        let sourceMapItem = MKMapItem(placemark: sourcePlacemark)
-        
-        request.source = sourceMapItem
-        request.destination = destinationMapItem
-        request.transportType = MKDirectionsTransportType.automobile
-        request.requestsAlternateRoutes = false
-        let directions = MKDirections(request: request)
-        
-        directions.calculate {
-            response, error in
-            if let route = response?.routes.first {
-                
-                print("Distance: \(route.distance)km , ETA: \(route.expectedTravelTime/60) mins")
-            } else {
-                print(error?.localizedDescription)
-            }
-        }
-        
-        
     }
     
     func plotPolyline(route: MKRoute) {
-        
         mapview?.add(route.polyline)
         print(route.polyline)
         // 2

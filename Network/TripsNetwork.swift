@@ -18,7 +18,7 @@ public final class TripNetWork {
         self.network = network
     }
     
-    public func fetchAlbums() -> Observable<[Trip]> {
+    public func FetchTrips() -> Observable<[Trip]> {
         return network.getItems("albums")
 }
 }

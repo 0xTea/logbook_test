@@ -136,7 +136,7 @@
                                     <navigationItem id="6DD-cg-O5i">
                                         <barButtonItem key="leftBarButtonItem" image="ic_menu_whitex" style="plain" id="wN0-3f-BE5">
                                             <connections>
-                                                <segue destination="xJb-u5-6qW" kind="presentation" id="7F6-Uu-uWO"/>
+                                                <segue destination="7wx-SN-SEM" kind="presentation" id="sXM-1g-EOA"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -194,57 +194,62 @@
             </objects>
             <point key="canvasLocation" x="692" y="671.51424287856082"/>
         </scene>
-        <!--Side Menu View Controller-->
-        <scene sceneID="gE0-IL-qKd">
+        <!--Side View Table View Controller-->
+        <scene sceneID="Y8x-YZ-9eh">
             <objects>
-                <tableViewController id="W72-mn-Ht5" customClass="SideMenuViewController" customModule="LogBook" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0T2-KA-f8K">
+                <tableViewController storyboardIdentifier="SideViewTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="apc-3u-FD4" customClass="SideViewTableViewController" customModule="LogBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="O2j-cZ-sB7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sidemenu" id="pBr-d3-kkZ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menu" textLabel="V9M-gI-t32" style="IBUITableViewCellStyleDefault" id="k53-r8-fF9">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pBr-d3-kkZ" id="jtU-XN-a6I">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k53-r8-fF9" id="yx1-3z-JrI">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V9M-gI-t32">
+                                            <rect key="frame" x="16" y="0.0" width="344" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="W72-mn-Ht5" id="MfR-M3-hHj"/>
-                            <outlet property="delegate" destination="W72-mn-Ht5" id="bha-O7-Yyv"/>
+                            <outlet property="dataSource" destination="apc-3u-FD4" id="FiN-Jd-IWi"/>
+                            <outlet property="delegate" destination="apc-3u-FD4" id="YPR-S6-oMP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="BTc-RM-xE1"/>
+                    <navigationItem key="navigationItem" id="RCE-d7-elU"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RfN-FF-Epq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IW2-qv-Vrg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33" y="2031"/>
+            <point key="canvasLocation" x="943" y="1425"/>
         </scene>
         <!--Side Menu Navigation Controller-->
-        <scene sceneID="kZg-xb-BfD">
+        <scene sceneID="BeG-V9-1Vo">
             <objects>
-                <navigationController toolbarHidden="NO" id="xJb-u5-6qW" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jrc-YW-scV">
+                <navigationController id="7wx-SN-SEM" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wdB-3E-df0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bxM-fl-kUY">
-                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="W72-mn-Ht5" kind="relationship" relationship="rootViewController" id="5nK-A6-MIp"/>
+                        <segue destination="apc-3u-FD4" kind="relationship" relationship="rootViewController" id="i09-x6-6tz"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yh4-Vk-KQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAS-3j-6CL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33" y="1385"/>
+            <point key="canvasLocation" x="-8" y="1425"/>
         </scene>
         <!--Sign Up Controller-->
         <scene sceneID="G73-RH-r5f">

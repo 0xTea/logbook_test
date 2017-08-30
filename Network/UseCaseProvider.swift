@@ -15,7 +15,7 @@ public final class UseCaseProvider:Domain.UseCaseProvider  {
     public init() {
         networkProvider = NetworkProvider()
     }
-        public func getAllTrips() -> AllTripsUseCase {
-           // return AllTripsUseCase
-    }
+//        public func getAllTrips() -> AllTripsUseCase {
+//        return AllTripsUseCase
+//    }
 }
